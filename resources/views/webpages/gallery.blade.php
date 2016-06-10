@@ -13,7 +13,7 @@
                 	<div class="row">
                     	<div class="col-lg-12">
                         	
-                            <p class="pm-page-title">Gallery</p>
+                            <p class="pm-page-title">Gallllllllery</p>
                             <p class="pm-page-message">Get an in depth look through our medical gallery</p>
                            
                         </div>
