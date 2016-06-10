@@ -1,5 +1,5 @@
 
-  <!-- BODY CONTENT end -->
+   <!-- BODY CONTENT end -->
         
         <div class="pm-fat-footer pm-parallax-panel" data-stellar-background-ratio="0.5">
             
@@ -27,7 +27,7 @@
                        <ul class="pm-general-icon-list">
                           <li>
                             <span class="fa fa-mobile-phone pm-general-icon"></span>
-                            <p>+ 91 9711577803</p>
+                            <p>+ 488 (0) 333.444.212</p>
                           </li>
                           <li>
                             <span class="fa fa-inbox pm-general-icon"></span>
@@ -127,8 +127,7 @@
                             <li><a href="{{URL:: asset('news')}}">News</a></li>
                             <li><a href="{{URL:: asset('services')}}">Services</a></li>
                             <li><a href="{{URL:: asset('gallery')}}">Gallery</a></li>
-                            <li><a href="{{URL:: asset('store')}}">Store</a></li>
-                            <li><a href="{{URL:: asset('contact-us')}}">Contact Us</a></li>
+                            <li><a href="{{URL:: asset('contact')}}">Contact Us</a></li>
                         </ul>
                     </div>
                 
@@ -138,7 +137,11 @@
                 
         </footer>
                 
-       <!-- Bootstrap core JavaScript
+       
+    
+    </div><!-- /pm_layout-wrapper -->
+    
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-2.1.3.min.js"></script>
@@ -157,12 +160,13 @@
     <script src="js/flexslider/jquery.flexslider.js"></script>
     <script src="js/jquery.testimonials.js"></script>
     <script src="js/wow/wow.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
     <script src="js/prettyphoto/js/jquery.prettyPhoto.js"></script>
     <script src="js/tinynav.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/isotope/jquery.isotope.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
         
     <p id="back-top" class="visible-lg visible-md visible-sm"></p>
- 
-    </body>
-</html>   
+    
+  </body>
+</html>
