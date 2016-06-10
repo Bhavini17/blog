@@ -123,7 +123,7 @@
                     
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         <ul class="pm-footer-navigation">
-                            <li><a href="{{URL:: asset('index')}}" class="active">Home</a></li>
+                            <li><a href="{{URL:: asset('index')}}">Home</a></li>
                             <li><a href="{{URL:: asset('news')}}">News</a></li>
                             <li><a href="{{URL:: asset('services')}}">Services</a></li>
                             <li><a href="{{URL:: asset('gallery')}}">Gallery</a></li>

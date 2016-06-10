@@ -311,6 +311,13 @@
 	.sf-sub-indicator {
 		display:none !important;	
 	}
+
+	.sf-menu {
+		display:table;
+		margin:0 auto;	
+		float:none;
+	}
+	
 			
 	.sf-menu ul ul {
 		left:0 !important;	
@@ -337,7 +344,7 @@
 	}
 	
 	.sf-menu ul {
-		position:relative !important;
+		position:absolute !important;
 		overflow:hidden !important;	
 		padding: 0 25px;
 	}

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+  <style>
+            
+   li a.active {
+    background-color: #EE5353;
+    color: white;
+}
+
+  </style>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content="">
@@ -8,7 +18,7 @@
     <link rel="shortcut icon" href="{{URL:: asset('favicon.html')}}">
     <title>U-Life WELLNESS</title>
 
-    <!--******** javascript code for validations done maunually**********/      -->  
+    <!--******** javascript code for validations done maunually**********-->  
 
     <script type="text/javascript">
    <!--
@@ -105,6 +115,11 @@
     <!-- Flexslider -->
     <link rel="stylesheet" type="text/css" href="{{URL:: asset('js/flexslider/flexslider-post.css')}}" />
     <!-- Flexslider -->
+
+     <!-- Isotope -->
+    <link rel="stylesheet" type="text/css" href="{{URL:: asset('js/isotope/isotope.css')}}" />
+    <!-- Isotope -->
+   
     
     <!-- PrettyPhoto -->
     <link rel="stylesheet" type="text/css" href="{{URL:: asset('js/prettyphoto/css/prettyPhoto.css')}}" />
@@ -226,7 +241,7 @@
         <!-- Request appointment form -->
         <div class="pm-request-appointment-form" id="pm-appointment-form">
             
-            <div class="container">
+           <div class="container">
                 <div class="row">
                     
                     <form action="getAppointment" method="post" name="myForm" onsubmit="return(validate())">
@@ -322,6 +337,7 @@
         </header>
         <!-- /Header area end -->
         
+
         <!-- Navigation area -->
         <div class="pm-nav-container">
         
@@ -345,14 +361,25 @@
                                     </ul>
                                 </li>  -->
                                 <li>
-                                    <a href="{{URL:: asset('news')}}">News</a>
+                                   
+
+                                    <a href="{{URL:: asset('news')}}"
+                                    @if(ends_with(Route::currentRouteAction(), 'Controller@news')) 
+                                        class="active"
+                                    @endif
+                                        >News</a>
                                     <ul>
                                         <li><a href="{{URL:: asset('news')}}">Blog Page</a></li>
                                         <li><a href="{{URL:: asset('news-post')}}">News Post</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="{{URL:: asset('services')}}">Services</a>
+                                    <a href="{{URL:: asset('services')}}"
+
+                                     @if(ends_with(Route::currentRouteAction(), 'Controller@services')) 
+                                        class="active"
+                                    @endif
+                                   >Services</a>
                                     <ul>
                                         <li><a href="{{URL:: asset('services')}}">Dental Implants</a></li>
                                         <li><a href="{{URL:: asset('services')}}">Medical Research</a></li>
@@ -361,10 +388,18 @@
                                         <li><a href="{{URL:: asset('services')}}">Blood Bank</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{URL:: asset('gallery')}}">Gallery</a></li>
+                                <li><a href="{{URL:: asset('gallery')}}"
+                                @if(ends_with(Route::currentRouteAction(), 'Controller@gallery')) 
+                                        class="active"
+                                    @endif
+                                    >Gallery</a></li>
                                <!-- <li><a href="{{URL:: asset('store')}}">Store</a></li> -->
                                 
-                                <li><a href="{{URL:: asset('contact')}}">Contact Us</a></li>
+                                <li><a href="{{URL:: asset('contact')}}"
+                                @if(ends_with(Route::currentRouteAction(), 'Controller@contact')) 
+                                        class="active"
+                                    @endif
+                                    >Contact Us</a></li>
                             
                         </ul>   
                     </nav>
@@ -372,24 +407,25 @@
 
                     <div class="col-lg-2 col-md-2 col-sm-12 pm-main-menu nav navbar-nav navbar-right">
                                         
-                        <ul class="pm-cart-info">
-                           <li><a href="{{URL:: asset('/login')}}">Login   </a></li><span>  
-                            <li><a href="{{URL:: asset('/panel')}}">Admin Login</a></li>
+                        <ul class="sf-menu pm-nav">
+                           <li><a href="{{URL:: asset('/login')}}"
+                           @if(ends_with(Route::currentRouteAction(), 'passwords.login')) 
+                                        class="active"
+                                    @endif
+                            >Login</a></li>  
+                            <li><a href="{{URL:: asset('/panel/login')}}">Admin</a></li>
                         </ul>
-                                              
+                        
                     </div>
-
-
-
 
 
                       <!--
                         <div class="collapse navbar-collapse col-lg-2 col-md-2 col-sm-12 pm-main-menu" id="app-navbar-collapse">
 
                             <div class="nav navbar-nav navbar-right">
-                             <ul class="sf-menu pm-nav " >
+                             <ul class="sf-menu pm-nav  pm-cart-info" >
                             <li><a style="text-align : right"  href="{{URL:: asset('/login')}}">Login</a></li>
-                            <li><a style="text-align : right"   href="{{URL:: asset('/panel')}}">Admin Login</a></li>
+                            <li><a style="text-align : right"   href="{{URL:: asset('/panel')}}">Admin</a></li>
                         </ul>
                         </div>
                          </div> 
